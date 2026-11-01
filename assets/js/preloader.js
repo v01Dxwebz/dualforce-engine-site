@@ -1,0 +1,1 @@
+export function initPreloader(){const el=document.querySelector('[data-preloader]');if(!el)return;const done=()=>{el.classList.add('is-done');el.setAttribute('aria-hidden','true')};if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)done();else window.addEventListener('load',()=>setTimeout(done,260),{once:true})}
